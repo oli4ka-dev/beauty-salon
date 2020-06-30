@@ -1,0 +1,883 @@
+@media (max-width: 1440px) {
+    .client {
+        top: 78%;
+        left: 55%;
+    }
+}
+
+@media (max-width: 1024px) {
+    *:hover,
+    *::before:hover,
+    *::after:hover {
+        background-color: none;
+        opacity: none;
+        color: transparent;
+        font-weight: transparent;
+    }
+
+    .slider .slick-next,
+    .slider .slick-prev {
+        display: none;
+    }
+
+    .slider__text-bg,
+    .slider__title {
+        padding: 10px 0 10px;
+        max-width: 100%;
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 1022px) {
+    .magazines {
+        &__inner {
+            flex-wrap: wrap;
+            padding-top: 3.1%;
+        }
+    }
+
+    .header__bottom-btn {
+        height: 36px;
+        padding: 5px 5px;
+        margin-left: 10px;
+        box-shadow: none;
+    }
+
+    .header__logo-wrapper {
+        border: 0px solid transparent;
+        height: 0;
+        max-width: 0;
+    }
+
+    .header__logo {
+        padding-top: 22px;
+
+        &-img {
+            display: none;
+        }
+
+        &-img2 {
+            display: block;
+            width: 45px;
+            height: 45px;
+        }
+    }
+
+    .header__logo-title,
+    .header__logo-subtitle {
+        font-size: 0;
+        line-height: 0;
+        height: 0;
+        max-width: 0;
+    }
+
+    .header__bottom-inner {
+        min-height: 45px;
+    }
+
+    .header__bottom-title {
+        font-size: 18px;
+    }
+
+
+    svg {
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .menu__list a {
+        padding: 0 10px;
+    }
+
+    .slider__form::before,
+    .slider__form::after,
+    .btn__submit::before,
+    .btn__submit::after,
+    .slider__form-submit::after,
+    .slider__form-submit::before {
+        display: none;
+    }
+
+    .advantage {
+        padding-top: 30px;
+
+        &__item {
+            margin: 0 10px;
+        }
+
+        &__title.title {
+            margin-bottom: 5px;
+        }
+
+        &__text-inner {
+            margin-bottom: 15px;
+        }
+
+        &__text {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+
+    .title {
+        font-size: 40px;
+        line-height: 44px;
+        margin-bottom: 30px;
+    }
+
+    .depilation,
+    .pedicure,
+    .eyelashes {
+        min-height: 700px;
+        margin: 8px 0px 8px 0px;
+        padding: 0px 0px 0px 0px;
+    }
+
+    .about__item {
+        margin-bottom: 10px;
+    }
+
+    .about__item-text {
+        margin-bottom: 8px;
+    }
+
+    .ortonix__item,
+    .manicure__item {
+        &-text {
+            margin-bottom: 20px;
+        }
+    }
+
+    .client {
+        top: 63%;
+        left: 68%;
+    }
+
+    .video {
+        margin: 0 auto;
+
+        &__wrapper {
+            max-width: 100%;
+            width: 100%;
+            box-shadow: none;
+            margin: 0 auto;
+        }
+
+        &__panel {
+            padding: 0 0px;
+            margin: 0 auto;
+        }
+    }
+
+    .panel__item {
+
+        input[type="range"] {
+            max-width: 40px;
+            margin: 0px 0px 0px 3px;
+        }
+
+        .panel__range[value] {
+            max-width: 40px;
+        }
+
+        progress {
+            width: 90px;
+            max-width: 100%;
+            margin-right: 2px;
+        }
+
+        progress::-webkit-progress-bar {
+            max-width: 90px;
+            max-width: 100%;
+        }
+
+        progress::-webkit-progress-value {
+            max-width: 90px;
+            max-width: 100%;
+        }
+
+        progress::-moz-progress-bar {
+            max-width: 90px;
+            max-width: 100%;
+        }
+    }
+}
+
+@media (max-width:800px) {
+    .magazines {
+        &__inner {
+            justify-content: center;
+        }
+    }
+
+    .ortonix__item,
+    .manicure__item {
+        &-text {
+            margin-right: 0px;
+            padding-right: 0px;
+        }
+    }
+
+    .depilation__item-2,
+    .ortonix__item-2,
+    .pedicure__item-2,
+    .eyelashes__item-2,
+    .manicure__item-2 {
+        margin: 0px;
+        padding: 0px;
+        display: block;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .depilation__item,
+    .ortonix__item,
+    .pedicure__item,
+    .eyelashes__item,
+    .manicure__item {
+        margin: 0 auto;
+    }
+
+    .depilation__title,
+    .pedicure__title,
+    .eyelashes__title {
+        background-color: rgba(129, 129, 126, 0.3);
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .text {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .ortonix__inner,
+    .manicure__inner {
+        flex-direction: column-reverse;
+    }
+
+    .depilation__inner,
+    .pedicure__inner,
+    .eyelashes__inner {
+        flex-direction: column;
+    }
+
+    .ortonix__item-text,
+    .manicure__item-text {
+        margin: 10px 0px 40px 0;
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+
+    *:hover,
+    *::before:hover,
+    *::after:hover {
+        background-color: none;
+        opacity: none;
+        color: transparent;
+        font-weight: transparent;
+    }
+
+    .advantage__item:hover .advantage__item-text {
+        color: $text;
+    }
+
+    .advantage__item:hover .advantage__item-img {
+
+        border: 5px solid rgba(9, 150, 134, .3);
+
+        & img {
+            animation: none;
+        }
+    }
+
+    .slider__form {
+        input {
+            background-color: #dcd6d5;
+            color: #303030;
+            transition: none;
+
+            &::placeholder {
+                color: #303030;
+                transition: none;
+            }
+        }
+    }
+
+
+    .magazines__item {
+        opacity: 1;
+        transition: none;
+
+        &-inner {
+            height: 100%;
+            transition: none;
+        }
+
+        &-text {
+            transition: none;
+
+            &:hover {
+                opacity: none;
+            }
+        }
+
+        &-link {
+            transition: none;
+
+            &:hover {
+                opacity: none;
+            }
+        }
+    }
+
+    .header {
+        position: relative;
+    }
+
+    .header__burger {
+        display: block;
+        position: relative;
+        width: 35px;
+        height: 20px;
+        z-index: 4;
+
+        &::before,
+        &::after {
+            content: "";
+            background-color: #fff;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            left: 0;
+            z-index: 4;
+            transition: all .3s ease 0s;
+        }
+
+        &::before {
+            top: 0;
+        }
+
+        &::after {
+            bottom: 0;
+        }
+
+        span {
+            position: absolute;
+            background-color: #fff;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            top: 9px;
+            z-index: 2;
+            transition: all .3s ease 0s;
+        }
+    }
+
+    .header__burger.active::before {
+        transform: rotate(45deg);
+        top: 9px;
+        background-color: $pink;
+    }
+
+    .header__burger.active::after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+        background-color: $pink;
+    }
+
+    .header__burger.active span {
+        transform: scale(0);
+    }
+
+    .header__top {
+        max-width: 100%;
+        width: 100%;
+        background-color: #3dbce2;
+        z-index: 815;
+
+    }
+
+    .menu {
+        display: none;
+        margin-top: 93px;
+        width: 100%;
+        border-top: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        z-index: 815;
+        text-align: center;
+        left: 0;
+        right: 0;
+        position: absolute;
+    }
+
+    .menu__list {
+        min-height: 280px;
+        background-color: #3dbce2;
+        z-index: 815;
+        display: block;
+        transition:none;
+cursor: none;
+        li {
+            border-right: 0;
+            display: block;
+            cursor: none;
+            &:hover {
+                background-color: transparent;
+                height: 45px;
+                border-radius: 0px;
+                color: $pink;
+            }
+    
+            &:hover a {
+                opacity: 1;
+            }
+        }
+
+        .scrollto {
+            display: block;
+            z-index: 115;
+            padding: 10px 0px 10px 0px;
+            font-size: 18px;
+        }
+    }
+
+    .menu__list li:nth-last-child(1) a {
+        padding: 10px 0px 10px 0px;
+    }
+
+}
+
+@media (max-width: 730px) {
+    .header__bottom-item {
+        padding: 0px 10px;
+    }
+
+    .slider__item-content {
+        justify-content: start;
+        margin-top: 10px;
+    }
+
+    .slider__title {
+        font-size: 50px;
+        line-height: 52px;
+    }
+
+    .slider__form-row {
+        display: inline-block;
+    }
+
+    .client {
+        top: 63%;
+        left: 70%;
+    }
+}
+
+@media (max-width: 670px) {}
+
+@media (max-width: 615px) {
+
+    #modal_2,
+    #modal {
+        margin: 40px 0px 0px 0px;
+        padding: 35px 10px;
+    }
+
+    .fancybox-slide--current #modal {
+        position: relative;
+        vertical-align: top;
+    }
+
+    .fancybox-content,
+    .mfp-content {
+        position: relative;
+        vertical-align: top;
+    }
+
+    .header__bottom-text.phone {
+        font-size: 5px;
+        color: transparent;
+        padding-left: 0;
+    }
+
+    .header__bottom-text.phone::before {
+        position: absolute;
+        left: 4px;
+        bottom: 15px;
+        font-size: 28px;
+        color: #fa3062;
+    }
+
+    .phone::after {
+        left: 0px;
+        font-size: 0px;
+    }
+
+    .title-phone {
+        font-size: 0px;
+    }
+
+    .header__bottom-btn {
+        margin-left: 0;
+    }
+
+    .header__logo {
+        padding-top: 5px;
+
+        &-img2 {
+            width: 32px;
+            height: 32px;
+        }
+    }
+
+    .slider__form-title {
+        padding: 3px 3px;
+    }
+
+    .slider__form input {
+        margin: 12px 0 12px;
+        max-width: 450px;
+        max-width: 100%;
+        width: 100%;
+        height: 38px;
+    }
+
+    .title {
+        font-size: 30px;
+        line-height: 38px;
+        margin-bottom: 20px;
+    }
+
+    .video__panel {
+        min-height: 47px;
+        flex-wrap: wrap;
+    }
+
+    .client {
+        top: 60%;
+        left: 63%;
+    }
+
+    .advantage__inner,
+    .advantage__inner-2 {
+        justify-content: center;
+    }
+
+    .advantage__inner {
+        flex-wrap: wrap;
+        margin-bottom: 0;
+
+        .advantage__item {
+            flex: 0 1 34%;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+    }
+
+    .advantage__item-img {
+        margin-bottom: 5px;
+    }
+
+    .advantage__inner-2 {
+        flex-wrap: wrap;
+        margin-bottom: 0;
+
+        .advantage__item {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+@media (max-width: 540px) {
+    .magazines {
+        &__item {
+            margin: 0 5px 15px 5px;
+        }
+
+        &__inner {
+            padding-top: 7%;
+        }
+    }
+
+}
+
+
+@media (max-width: 520px) {
+    .slider__title {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .slider__text-bg,
+    .slider__title {
+        padding: 5px 0 5px;
+    }
+
+    .slider__text {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    .advantage__inner-2 {
+        .advantage__item {
+            flex: 0 1 34%;
+            width: 100%;
+        }
+    }
+
+    .depilation__item,
+    .ortonix__item,
+    .pedicure__item,
+    .eyelashes__item,
+    .manicure__item {
+        margin: 0;
+    }
+
+    .contact {
+        &__wrapper {
+            padding: 3px;
+        }
+
+        &__title {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        &__text {
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+
+}
+
+@media (max-width: 490px) {
+    .magazines {
+        &__item {
+
+            &:last-child {
+                margin: 0 5px 0px 5px;
+            }
+        }
+
+        &__inner {
+            padding-top: 0%;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .depilation__item-2-text,
+    .pedicure__item-2-text,
+    .eyelashes__item-2-text {
+        margin: 38px 0px 10px 0px;
+    }
+
+    .client {
+        top: 60%;
+        left: 56%;
+    }
+
+    .ortonix__item-text,
+    .manicure__item-text {
+        margin: 40px 0px 40px 0;
+    }
+}
+
+@media (max-width: 440px) {
+    .header__bottom-item {
+        max-width: 70px;
+        width: 100%;
+    }
+
+    .header__bottom-inner {
+        justify-content: space-around;
+    }
+
+    .header__bottom-text.case,
+    .header__bottom-text.phone {
+        font-size: 0px;
+        color: transparent;
+        padding-left: 0;
+    }
+
+    .header__bottom-text.case::before {
+        position: absolute;
+        left: 4px;
+        bottom: 15px;
+        font-size: 28px;
+        color: #fa3062;
+    }
+
+    .header__bottom-text.phone::before {
+        left: 18px;
+    }
+
+    .case::after {
+        left: 0px;
+        font-size: 0px;
+    }
+
+    .title-case {
+        font-size: 0px;
+    }
+}
+
+@media (max-width: 415px) {
+
+    .title {
+        margin-bottom: 10px;
+    }
+
+    .panel__btn-speed_down,
+    .panel__btn-speed_up,
+    .panel__btn-speed_normal {
+        display: none;
+    }
+}
+
+@media (max-width: 390px) {
+    .header__bottom-btn {
+        padding: 0px 0px;
+    }
+
+    .header__bottom-text.phone::before {
+        left: 18px;
+    }
+
+    .ortonix__item-text,
+    .manicure__item-text {
+        margin: 45px 0px 40px 0;
+    }
+
+    .title {
+        font-size: 28px;
+        line-height: 32px;
+        margin-bottom: 15px;
+    }
+
+    .advantage__inner-2 {
+        .advantage__item {
+            flex: 0 1 40%;
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 360px) {
+    .header__bottom-text.phone::before {
+        left: 12px;
+    }
+}
+
+@media (max-width: 320px) {
+    .header__bottom-text.phone::before {
+        left: 5px;
+    }
+
+    .advantage__item {
+        margin: 0 0;
+    }
+
+    .advantage__inner-2,
+    .advantage__inner {
+        .advantage__item {
+            flex: 0 1 100%;
+            width: 100%;
+        }
+    }
+}
+
+//============================================
+@media (min-width: 481px) {
+
+    .depilation__item-2-text,
+    .pedicure__item-2-text,
+    .eyelashes__item-2-text {
+        margin: 28px 0px 10px 0px !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .menu {
+        display: block !important;
+    }
+}
+
+@media (min-width: 801px) {
+    .advantage__inner {
+        flex-wrap: nowrap !important;
+
+        .advantage__item {
+            flex: 0 1 25% !important;
+            margin-bottom: 0px !important;
+        }
+    }
+}
+
+
+@media (min-width: 901px) {
+    .video {
+        &__wrapper {
+            max-width: 620px !important;
+            width: 100% !important;
+            box-shadow: 0 5px 35px rgba(255, 0, 130, 0.3);
+            margin: 0 auto !important;
+        }
+
+        &__panel {
+            padding: 0 10px;
+
+        }
+    }
+
+    .panel__item {
+
+        input[type="range"] {
+            max-width: 70px !important;
+            margin: 0px 0px 0px 3px;
+        }
+
+        .panel__range[value] {
+            max-width: 70px !important;
+        }
+
+        progress {
+            width: 180px !important;
+            max-width: 100%;
+        }
+
+        progress::-webkit-progress-bar {
+            max-width: 180px !important;
+            max-width: 100%;
+        }
+
+        progress::-webkit-progress-value {
+            max-width: 180px !important;
+            max-width: 100%;
+        }
+
+        progress::-moz-progress-bar {
+            max-width: 180px !important;
+            max-width: 100%;
+        }
+    }
+}
+
+@media (min-width: 1025px) {
+
+    .slider .slick-next,
+    .slider .slick-prev {
+        display: inline-block !important;
+    }
+}
