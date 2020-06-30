@@ -1,17 +1,767 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Салон</title>
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
-    
-    
+    <div class="wrapper">
+        <div class="content">
+             <header class="header"> 
+                 <div class="header__top">
+                    <div class="container">
+                        <div class="header__top-inner">
+                            <div class="header__logo-wrapper">
+                                <div class="header__logo">
+                                    <img class="header__logo-img" src="images/logo.png" alt="">
+                                    <img class="header__logo-img2" src="images/logo_small.png" alt="">
+                                    <a href="#" class="header__logo-title">Beautty-Line</a>
+                                    <a href="#" class="header__logo-subtitle">Салон красоты в Праге</a>
+                                </div>
+                                <svg width="155" height="180">
+                                    <polyline points=" 0,155 78,170 156,155 " fill="#fff" stroke="#3dbce2"
+                                        stroke-width="3" />
+                                </svg>
+                            </div>
+                           
+                            <nav class="menu">
+                                <ul class="menu__list">
+                                    <li>
+                                        <a class="scrollto" href="#eyelashes">Наращивание ресниц</a>
+                                    </li>
+                                    <li>
+                                        <a class="scrollto" href="#manicure">Маникюр</a>
+                                    </li>
+                                    <li>
+                                        <a class="scrollto" href="#pedicure">Педикюр</a>
+                                    </li>
+                                    <li>
+                                        <a class="scrollto" href="#ortonix">Ортониксия</a>
+                                    </li>
+                                    <li>
+                                        <a class="scrollto" href="#depilation">Депиляция</a>
+                                    </li>
+                                    <li>
+                                        <a class="scrollto" href="#about">О салоне</a>
+                                    </li>
+                                    <li>
+                                        <a class="scrollto" href="#contact">Контакты</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="header__burger">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__bottom">
+                    <div class="container">
+                        <div class="header__bottom-inner">
+                            <div class="header__bottom-item">
+                                <a class="header__bottom-title title-case" href="#">
+                                    наше ПОРТФОЛИО
+                                </a>
+                                <a class="header__bottom-text case" href="#">
+                                    посмотреть работы
+                                </a>
+                            </div>
+                            <div class="header__bottom-item">
+                                <a class="header__bottom-title title-phone" href="tel:+420603739086">
+                                    +420603739086
+                                </a>
+                                <a class="header__bottom-text phone" href="tel:+420603739086">
+                                    заказать звонок
+                                </a>
+                            </div>
+                            <a class="header__bottom-btn bubbly-button" data-fancybox data-src="#modal"
+                                href="javascript:;">
+                                записаться online
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header> 
+            <main>
+
+                <section class="slider">
+                    <div class="slider__inner">
+                        <div class="slider__item" style="background-image: url(images/slide-4.jpg)">
+                            <div class="container">
+                                <div class="slider__item-content">
+                                    <div class="slider__text-bg">
+                                        <h1 class="slider__title">
+                                            салон красоты В ПРАГЕ!
+                                        </h1>
+                                        <h2 class="slider__text">
+                                            Наращивание и химическая завивка ресниц. Маникюр, аппаратный педикюр,
+                                            Shellac.
+                                            Укрепление и
+                                            наращивание ногтей Bio Sculpture Gel
+                                        </h2>
+                                    </div>
+                                    <div class="slider__form">
+                                        <div class="slider__form-title">
+                                            Оставьте заявку и получите бесплатно консультацию специалиста
+                                        </div>
+
+                                        <form action="#" id="form_i"
+                                            onsubmit="javascript:return validate('form_i','mail');">
+                                            <div class="slider__form-row">
+                                                <input type="text" name="text" placeholder="Как вас зовут?">
+                                                <input type="tel" id="phone" name="phone"
+                                                    placeholder="Ваш номер телефона?">
+                                                <input type="email" id="mail" name="email" placeholder="Ваш e-mail?">
+                                            </div>
+                                            <div class="slider__form-submit">
+                                                <button class="btn__submit" type="submit">отправить заявку</button>
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__item" style="background-image: url(images/magazines_bg_3.jpg)">
+                            <div class="container">
+                                <div class="slider__item-content">
+                                    <div class="slider__text-bg">
+                                        <h1 class="slider__title">
+                                            салон красоты В ПРАГЕ!
+                                        </h1>
+                                        <h2 class="slider__text">
+                                            Наращивание и химическая завивка ресниц. Маникюр, аппаратный педикюр,
+                                            Shellac.
+                                            Укрепление и
+                                            наращивание ногтей Bio Sculpture Gel
+                                        </h2>
+                                    </div>
+                                    <div class="slider__form">
+                                        <div class="slider__form-title">
+                                            Оставьте заявку и получите бесплатно консультацию специалиста
+                                        </div>
+
+                                        <form action="#" id="form_2"
+                                            onsubmit="javascript:return validate('form_2','mail_2');">
+                                            <div class="slider__form-row">
+                                                <input type="text" placeholder="Как вас зовут?">
+                                                <input type="tel" id="ph" placeholder="Ваш номер телефона?">
+                                                <input type="email" id="mail_2" placeholder="Ваш e-mail?">
+                                            </div>
+                                            <div class="slider__form-submit">
+                                                <button class="btn__submit" type="submit">отправить заявку</button>
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__item" style="background-image: url(images/slide-2.jpg)">
+                            <div class="container">
+                                <div class="slider__item-content">
+                                    <div class="slider__text-bg">
+                                        <h1 class="slider__title">
+                                            салон красоты В ПРАГЕ!
+                                        </h1>
+                                        <h2 class="slider__text">
+                                            Наращивание и химическая завивка ресниц. Маникюр, аппаратный педикюр,
+                                            Shellac.
+                                            Укрепление и
+                                            наращивание ногтей Bio Sculpture Gel
+                                        </h2>
+                                    </div>
+                                    <div class="slider__form">
+                                        <div class="slider__form-title">
+                                            Оставьте заявку и получите бесплатно консультацию специалиста
+                                        </div>
+
+                                        <form action="#" id="form_3"
+                                            onsubmit="javascript:return validate('form_3','mail_3');">
+                                            <div class="slider__form-row">
+                                                <input type="text" placeholder="Как вас зовут?">
+                                                <input type="tel" id="tel3" placeholder="Ваш номер телефона?">
+                                                <input type="email" id="mail_3" placeholder="Ваш e-mail?">
+                                            </div>
+                                            <div class="slider__form-submit">
+                                                <button class="btn__submit" type="submit">отправить заявку</button>
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <div class="paralax"></div>
+
+                <section class="advantage">
+                    <div class="container">
+                        <h3 class="advantage__title title">преимущества салона</h3>
+                        <div class="advantage__text-inner">
+                            <p class="advantage__text">
+                                Косметика, зарекомендовавшая себя на мировом рынке.Все специалисты и мастера нашего
+                                престижного
+                                салона красоты работают на косметике элитных марок: Alterna, Kydra, Joico, Secret
+                                Professional,
+                                La Ric, Leighton Denny, Decleor, Pharmaskincare, HydroPeptide, Heliabrine. Успешно
+                                пройдя
+                                клинические исследования, вся продукция была одобрена экспертами мирового уровня. Мы
+                                всегда
+                                предлагаем Вам только самое лучшее, поэтому всю косметику сначала пробуем на себе.
+                            </p>
+                            <p class="advantage__text">
+                                Комфортная и домашняя обстановка. Переступая порог салона красоты, Вы слышите приятную
+                                музыку,
+                                чувствуете нежные ароматы, попадаете в атмосферу эстетики и гармонии. И при этом Вы,
+                                несомненно,
+                                будете чувствовать себя как дома!
+                            </p>
+                        </div>
+                        <div class="advantage__inner">
+                            <a class="advantage__item" href="#">
+                                <div class="advantage__item-img">
+                                    <img src="images/advantades/icon-1-min.jpg" alt="">
+                                </div>
+                                <div class="advantage__item-text">
+                                    Удобное время работы, без выходных
+                                </div>
+                            </a>
+                            <a class="advantage__item" href="#">
+                                <div class="advantage__item-img">
+                                    <img src="images/advantades/icon-2-min.jpg" alt="">
+                                </div>
+                                <div class="advantage__item-text">
+                                    Комфортный зал для ожидания
+                                </div>
+                            </a>
+                            <a class="advantage__item" href="#">
+                                <div class="advantage__item-img">
+                                    <img src="images/advantades/icon-3-min.jpg" alt="">
+                                </div>
+                                <div class="advantage__item-text">
+                                    Шаговая доступность от метро
+                                </div>
+                            </a>
+                            <a class="advantage__item" href="#">
+                                <div class="advantage__item-img">
+                                    <img src="images/advantades/icon-4-min.jpg" alt="">
+                                </div>
+                                <div class="advantage__item-text">
+                                    Доступная стоимость наших услуг
+                                </div>
+                            </a>
+                        </div>
+                        <div class="advantage__inner-2">
+                            <a class="advantage__item" href="#">
+                                <div class="advantage__item-img">
+                                    <img src="images/advantades/icon-5-min.jpg" alt="">
+                                </div>
+                                <div class="advantage__item-text">
+                                    Весь спектр косметических услуг для Вас
+                                </div>
+                            </a>
+                            <a class="advantage__item" href="#">
+                                <div class="advantage__item-img">
+                                    <img src="images/advantades/icon-6-min.jpg" alt="">
+                                </div>
+                                <div class="advantage__item-text">
+                                    Многочисленные награды у наших специалистов
+                                </div>
+                            </a>
+                            <a class="advantage__item" href="#">
+                                <div class="advantage__item-img">
+                                    <img src="images/advantades/icon-7-min.jpg" alt="">
+                                </div>
+                                <div class="advantage__item-text">
+                                    Бесплатная професиональная консультация
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="eyelashes" style="background-image: url(images/eyelashes-bg-min.jpg)" id="eyelashes">
+                    <div class="container">
+                        <div class="eyelashes__wrapper">
+                            <h3 class="eyelashes__title title">
+                                Наращивание ресниц
+                            </h3>
+                            <div class="eyelashes__inner">
+                                <div class="eyelashes__item">
+                                    <a class="eyelashes__item-img" href="#">
+                                        <img src="images/eyelashes.png" alt="">
+                                    </a>
+                                    <div class="client">
+                                        <div class="client__content">
+                                            <div class="client__content_num" data-max="436">436</div>
+                                            <div class="client__content-text">
+                                                довольных
+                                                клиентов
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="eyelashes__item-2">
+                                    <p class="eyelashes__item-2-text text">
+                                        В наше время очарование любой женщины заключается, прежде всего, в ее
+                                        естественной,
+                                        природной красоте – жемчужной улыбке, красивых волосах, ухоженной коже и,
+                                        конечно
+                                        же,
+                                        обворожительном взгляде. И хотя, как известно, не всех природа одаривает щедро с
+                                        самого
+                                        рождения, чтобы выглядеть ослепительно много труда не нужно. Ведь всегда есть
+                                        шанс
+                                        исправить положение!
+
+                                    </p>
+
+                                    <a class="bubbly-button bubbly-button__size" data-fancybox data-src="#modal_2"
+                                        href="javascript:;">заказать консультацию!</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="manicure" id="manicure">
+                    <div class="container">
+                        <h3 class="manicure__title title">
+                            профессиональный маникюр
+                        </h3>
+                        <div class="manicure__inner">
+                            <div class="manicure__item-2">
+                                <p class="manicure__item-text text">
+                                    Европейский маникюр обладает неоспоримыми преимуществами - при выполнении не
+                                    используются щипчики, кутикулу и пазухи околоногтевых валиков обрабатывают
+                                    специальным
+                                    средством для удаления кутикулы, что позволяет более бережно решить задачу. Эти
+                                    средства
+                                    бывают двух видов – на щелочной основе и фруктовых кислотах (альфа-гидрокислоты).
+                                    При
+                                    постоянном применении кутикула практически престает расти, руки дольше пребывают в
+                                    ухоженном состоянии. Для людей с тонкой и мягкой кожей, а так же для тех, кто
+                                    регулярно
+                                    пользуется услугами маникюрного мастера.
+                                </p>
+
+                                <a class="bubbly-button bubbly-button__size" data-fancybox data-src="#modal_2"
+                                    href="javascript:;">заказать консультацию!</a>
+
+                            </div>
+                            <div class="manicure__item">
+                                <a class="manicure__item-img" href="#">
+                                    <img src="images/manicure.png" alt="">
+                                </a>
+                                <div class="client">
+                                    <div class="client__content">
+                                        <div class="client__content_num" data-max="890">890</div>
+                                        <div class="client__content-text">
+                                            довольных
+                                            клиентов
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="pedicure" id="pedicure" style="background-image: url(images/pedicure-bg.jpg)">
+                    <div class="container">
+                        <div class="pedicure__wrapper">
+                            <h3 class="pedicure__title title">
+                                Педикюр
+                            </h3>
+                            <div class="pedicure__inner">
+                                <div class="pedicure__item">
+                                    <a class="pedicure__item-img" href="#">
+                                        <img src="images/pedicure.png" alt="">
+                                    </a>
+
+                                    <div class="client">
+                                        <div class="client__content">
+                                            <div class="client__content_num">245</div>
+                                            <div class="client__content-text">
+                                                довольных
+                                                клиентов
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pedicure__item-2">
+                                    <p class="pedicure__item-2-text text">
+                                        Педикюр начинается с того, что ноги опускаются в ванночку с водой. Время и
+                                        температура регулируются индивидуально. Например, ногам с сухой, грубой кожей,
+                                        трещинами и натоптышами требуется не меньше 15-20 минут с умеренно горячей
+                                        водой. Если же стопы без трещин и натоптышей , достаточно 10 минут в комфортно
+                                        теплой воде.
+                                    </p>
+                                    <a class="bubbly-button bubbly-button__size" data-fancybox data-src="#modal_2"
+                                        href="javascript:;">заказать консультацию!</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="ortonix" id="ortonix">
+                    <div class="container">
+                        <h3 class="ortonix__title title">
+                            Ортониксия
+                        </h3>
+                        <div class="ortonix__inner">
+                            <div class="ortonix__item-2">
+                                <p class="ortonix__item-text text">
+                                    Почему-то большинство людей относятся к проблеме вросшего ногтя, возникающей в
+                                    подавляющем большинстве случаев на больших пальцах ног, довольно легкомысленно.
+                                    Лечить заболевание многие предпочитают самостоятельно, совершая при этом множество
+                                    фатальных ошибок, приводящих в конечном итоге к весьма плачевным результатам. Из-за
+                                    неправильного лечения и несоблюдения элементарных профилактических мер вросший
+                                    ноготь перерасти в серьезное воспалительное заболевание, сопровождающееся сильными
+                                    болями.
+                                </p>
+
+                                <a class="bubbly-button bubbly-button__size" data-fancybox data-src="#modal_2"
+                                    href="javascript:;">заказать консультацию!</a>
+
+                            </div>
+                            <div class="ortonix__item">
+                                <a class="ortonix__item-img" href="#">
+                                    <img src="images/ortonix.png" alt="">
+                                </a>
+                                <div class="client">
+                                    <div class="client__content">
+                                        <div class="client__content_num">242</div>
+                                        <div class="client__content-text">
+                                            довольных
+                                            клиентов
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="depilation" id="depilation" style="background-image: url(images/depilation-bg.jpg)">
+                    <div class="container">
+                        <div class="depilation__wrapper">
+                            <h3 class="depilation__title title">
+                                Депиляция
+                            </h3>
+                            <div class="depilation__inner">
+                                <div class="depilation__item">
+                                    <a class="depilation__item-img" href="#">
+                                        <img src="images/depilation.png" alt="">
+                                    </a>
+
+                                    <div class="client">
+                                        <div class="client__content">
+                                            <div class="client__content_num">326</div>
+                                            <div class="client__content-text">
+                                                довольных
+                                                клиентов
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="depilation__item-2">
+                                    <p class="depilation__item-2-text text">
+                                        Процесс депиляции воском начинается с нанесения на кожу специального
+                                        подготовительного лосьона, это необходимо для того чтобы воск максимально
+                                        зафиксировал волосинку, не соскальзывая с нее. После этого следует этап
+                                        нанесения горячего воска и накладывания на обработанную поверхность полоски
+                                        ткани. Когда воск остывает, он затвердевает и удаляется резким движением вместе
+                                        с полосками ткани и застрявшими волосками. Во избежание появления раздражений и
+                                        сыпи после процедуры на кожу наносят антисептический крем.
+                                    </p>
+
+                                    <a class="bubbly-button bubbly-button__size" data-fancybox data-src="#modal_2"
+                                        href="javascript:;">заказать консультацию!</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="about" id="about">
+                    <div class="container">
+                        <div class="about__inner">
+                            <h3 class="about__title title">
+                                о нашем салоне
+                            </h3>
+                            <div class="about__item">
+                                <p class="about__item-text">
+                                    Наш салон является сертифицированным Shellac салоном.
+                                </p>
+                                <p class="about__item-text">
+                                    Shellac (Шеллак) – первый гибрид лака и геля, сочетающий в себе самые лучшие
+                                    свойства
+                                    профессиональных лаков для ногтей (простота нанесения, яркий блеск, богатство цвета)
+                                    и
+                                    современных гелей (отсутствие запаха, носибельность, нестираемость).
+                                </p>
+                                <p class="about__item-text">
+                                    Носится как гель, выглядит как лак, снимается за считанные минуты, укрепляет и
+                                    защищает
+                                    ногти, гипоаллергенный, создан по формуле 3 FREE, не содержит дибутилфталата,
+                                    толуола,
+                                    формальдегида и его смол – все это Shellac!
+                                </p>
+                            </div>
+                            <div class="about__item">
+                                <div class="about__item-title">
+                                    Организация и проведение конкурсов по наращиванию ресниц в Праге
+                                </div>
+                                <p class="about__item-text">
+                                    В свободное от основной деятельности в салоне совместно с компанией Esthetic Line
+                                    s.r.o.
+                                    участвую в организации, проведении и судействе конкурсов по наращиванию ресниц. Так
+                                    же
+                                    проводим подготовительные курсы по конкурсному наращиванию ресниц.
+                                </p>
+                                <p class="about__item-text">
+                                    <span>
+                                        Международный конкурс по наращиванию ресниц в Праге 2012, тема "Мулен Руж"
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="video__wrapper">
+                            <video class="video" width="620" height="350" id="video_player"
+                                poster="images/player-min.jpg">
+                                <source src="video/Molhando.mp4"
+                                    type="video/mp4">
+                            </video>
+
+                            <div class="video__panel">
+                                <div class="panel__item">
+                                    <button class="panel__btn panel__btn-play icon-play3" id="play"></button>
+                                </div>
+                                <div class="panel__item">
+                                    <button class="panel__btn panel__btn-pause icon-pause" id="pause"></button>
+                                </div>
+                                <div class="panel__item">
+                                    <button class="panel__btn panel__btn-stop icon-stop2" id="stop"></button>
+                                </div>
+                                <div class="panel__item">
+                                    <button class="panel__btn panel__btn-speed_down icon-backward2"
+                                        id="speed_down"></button>
+                                </div>
+                                <div class="panel__item">
+                                    <button class="panel__btn panel__btn-speed_normal icon-stop"
+                                        id="speed_nornal"></button>
+                                </div>
+                                <div class="panel__item">
+                                    <button class="panel__btn panel__btn-speed_up icon-forward3" id="speed_up"></button>
+                                </div>
+                                <div class="panel__item">
+                                    <div class="panel__progress">
+                                        <progress value="0" max="100" id="progress"></progress>
+                                    </div>
+                                </div>
+                                <!-- вывод времени видео в секундах -->
+                                <!-- <div class="panel__item">
+                                    <span class="panel__timer" id="time">0</span>
+                                </div> -->
+                                <div class="panel__item-volume">
+                                    <div class="panel__item">
+                                        <input class="panel__range" type="range" id="volume" min=0 max=100 value="20">
+                                    <button class=" panel__btn panel__btn-volume volume_up icon-volume-low"
+                                            id="volume_up"></button>
+                                    </div>
+                                    <div class="panel__item volume_cross">
+                                        <button class="panel__btn panel__btn-volume icon-volume-mute2"
+                                            id="volume_cross"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+
+                <section class="magazines" style="background-image: url(images/magazines_bg-2.jpg)">
+                    <div class="container">
+                        <div class="magazines__inner">
+                            <div class="magazines__item" style="background-image: url(images/magazines_1.jpg)">
+                                <div class="magazines__item-inner">
+                                    <div class="magazines__item-wrap">
+                                        <h4 class="magazines__item-title">
+                                            PROFI NEHTY 4/2012
+                                        </h4>
+                                        <a class="magazines__item-text" href="#">
+                                            Коррекция фигуры
+                                        </a>
+                                        <a class="magazines__item-link" href="#">просмотреть</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="magazines__item" style="background-image: url(images/magazines_2.jpg)">
+                                <div class="magazines__item-inner">
+                                    <div class="magazines__item-wrap">
+                                        <h4 class="magazines__item-title">
+                                            PROFI NEHTY 4/2012
+                                        </h4>
+                                        <a class="magazines__item-text" href="#">
+                                            Диагностика заболеваний ногтей</a>
+                                        <a class="magazines__item-link" href="#">просмотреть</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="magazines__item" style="background-image: url(images/magazines_3.jpg)">
+                                <div class="magazines__item-inner">
+                                    <div class="magazines__item-wrap">
+                                        <h4 class="magazines__item-title">
+                                            PROFI NEHTY 4/2012
+                                        </h4>
+                                        <a class="magazines__item-text" href="#">
+                                            Эстетика кожи. Лечение гиперпигментации
+                                        </a>
+                                        <a class="magazines__item-link" href="#">просмотреть</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="magazines__item" style="background-image: url(images/magazines_4.jpg)">
+                                <div class="magazines__item-inner">
+                                    <div class="magazines__item-wrap">
+                                        <h4 class="magazines__item-title">
+                                            PROFI NEHTY 4/2012
+                                        </h4>
+                                        <a class="magazines__item-text" href="#">
+                                            Диагностика заболеваний волос и кожи головы
+                                        </a>
+                                        <a class="magazines__item-link" href="#">просмотреть</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="contact" id="contact">
+                    <div class="map" id="map"></div>
+                    <div class="container">
+                        <div class="contact__wrapper">
+                         
+                            <div class="contact__inner">
+                                <h5 class="contact__title">
+                                    Beauty Linte
+                                </h5>
+                                <div class="contact__text">
+                                    Praha 6,ul.Milady Horákové 66/103
+                                </div>
+                                <div class="contact__text">
+                                    metro Hradčanska
+                                </div>
+                                <div class="contact__text">
+                                    Часы работы:
+                                </div>
+                                <div class="contact__text">
+                                    Понедельник-Суббота - 9.00-19.00
+                                </div>
+                                <a class="contact__phone" href="tel:420603739086">
+                                    тел. +420603739086
+                                </a>
+                            </div>
+                         
+                        </div>
+                    </div>
+
+                </section>
+                <!-- AIzaSyBZXbWhZ3QJk9lmKqSmZDDJnR5n19UnUxk   ключ   -->
+            </main>
+
+        </div>
+        <footer class="footer">
+            <div class="footer__top">
+                <div class="container">
+                    <div class="footer__top-text">
+                        2009-2015 All rightst reserved
+                        <a class="footer__top-link" href="#">
+                            "Beauty Line"
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="container">
+                    <div class="footer__bottom-text">
+                        site made with love
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21px"
+                        height="18px">
+                        <image x="0px" y="0px" width="21px" height="18px"
+                            xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAASCAMAAACDzGUcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA2FBMVEX2JVr////2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr2JVr////8+qCjAAAARnRSTlMAAA5nnaWJMwJerc3DgyHS+owEEbLnRhvhhO0jf/Ji+46/3c7I15w8/mmSCgWeyRwBdPafFTvG4FqG/RpY94BgpAku+FIQDao5BgAAAAFiS0dEAf8CLd4AAAAHdElNRQfkBgkSFQXrNCybAAAAoElEQVQY023P1RqCQBiE4VkVUcHuFluxGzv/+78kFwljnaPvec8GgMfrk/wy+ALBkKKGI4wBcpT4YvEEkimzKJ1hyObIWh6SXYUiSnZSuVJ1sgbNSaq71UCTxLXQ/qMaOl1Re0BfQFUHBsMfHI35C0yms0+cL8xvfMuVa+sNY7ZCN7YWSjv2VmB/MPEIfClOr6e/ijMpF1GvtztEhfFw9QkPpzucwJ904wAAAABJRU5ErkJggg==" />
+                    </svg>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <div id="modal">
+        <div class="singup__wrapper">
+            <div class="singup__title">
+                Записаться online
+            </div>
+            <form action="#" id="form_id" onsubmit="javascript:return validate('form_id','email');">
+                <label for="forlabel" class="singup__label-name">
+                    <input class="singup__name" id="forlabel" type="text" name="text" placeholder="Имя" required>
+                </label>
+                <label for="tel" class="singup__label-tel">
+                    <input class="singup__tel" id="tel" type="tel" name="phone" placeholder="Телефон" required>
+                </label>
+                <label for="email" class="singup__label-mail">
+                    <input class="singup__mail" id="email" type="email" name="email" placeholder="@-Email" />
+                </label>
+                <button class="singup__btn" type="submit">Записаться</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="modal_2">
+        <div class="consultation__wrapper">
+            <div class="consultation__title">
+                ЗАКАЖИ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ!
+            </div>
+
+            <form action="#">
+                <label class="consultation__label-name">
+                    <input class="consultation__name" type="text" name="text" placeholder="Имя" required>
+                </label>
+                <label class="consultation__label-tel">
+                    <input class="consultation__tel" id="tel2" type="tel" name="phone" placeholder="Телефон" required>
+                </label>
+                <button class="consultation__btn" type="submit">Перезвоните мне!</button>
+            </form>
+        </div>
+    </div>
+
+    <button class="back-to-top" id="top"></button>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/jquery.spincrement.min.js"></script>
     <script src="js/libs.min.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZXbWhZ3QJk9lmKqSmZDDJnR5n19UnUxk&callback=initMap">
+    </script>
     <script src="js/main.js"></script>
+    
 </body>
 </html>

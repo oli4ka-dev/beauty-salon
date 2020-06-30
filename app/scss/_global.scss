@@ -7,31 +7,48 @@ html {
 *::after {
     box-sizing: inherit;
 }
+
 a {
     display: inline-block;
-    text-decoration: none;
+    text-decoration: transparent;
 }
 
 html,
 body {
+    font-family: "Roboto-Light";
+    font-size: 16px;
+    line-height: 24px;
+    color: $text;
     height: 100%;
-    // position: relative;
+    position: relative;
     overflow-x: hidden;
 }
+
 //прижать footer к низу 
-* {
+*,
+main,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
     padding: 0;
+
 }
 .wrapper {
     display: flex;
     flex-direction: column;
-    min-height: 100%;
+    min-height: 100vh;
+    overflow: hidden;
 }
+
 .content {
-    background-color: $grey;
+    background-color: #fff;
     flex: 1 0 auto;
 }
+
 .footer {
     flex: 0 0 auto;
 }
@@ -41,4 +58,49 @@ body {
     max-width: 1030px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.title {
+    font-family: "OpenSans-SemiBold";
+    font-size: 48px;
+    line-height: 52px;
+    color: $text;
+    text-align: center;
+    text-transform: uppercase;
+    word-wrap: break-word;
+}
+
+.text {
+    max-width: 520px;
+    width: 100%;
+}
+
+// кнопка на верх
+.back-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    width: 45px;
+    height: 45px;
+    border: 1px solid rgba(239, 239, 239, .5);
+    border-radius: 50%;
+    background-color: rgba(61, 188, 226, .5);
+    cursor: pointer;
+    transition: .4s;
+  
+    &:hover,
+    &:focus {
+        filter: brightness(1.5);
+        outline: none;
+    }
+    &::before{
+        font-family: 'icomoon';
+        content: "\f062";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: rgba(239, 239, 239, .5);
+        font-size: 22px;
+    }
 }
