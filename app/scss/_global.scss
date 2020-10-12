@@ -21,7 +21,7 @@ body {
     color: $text;
     height: 100%;
     position: relative;
-    overflow-x: hidden;
+    // overflow-x: hidden;
 }
 
 //прижать footer к низу 
@@ -37,6 +37,7 @@ h6 {
     padding: 0;
 
 }
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -87,13 +88,14 @@ h6 {
     background-color: rgba(61, 188, 226, .5);
     cursor: pointer;
     transition: .4s;
-  
+
     &:hover,
     &:focus {
         filter: brightness(1.5);
         outline: none;
     }
-    &::before{
+
+    &::before {
         font-family: 'icomoon';
         content: "\f062";
         position: absolute;
